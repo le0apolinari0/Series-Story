@@ -13,13 +13,17 @@
 - Manipulando fluxo de dados com Streams
 - Implementando estatísticas personalizadas
 
-
+api omdb
 
 ##  Tecnologias
 <div>
   <img src="https://img.shields.io/badge/Java-D14836?style=for-the-badge&logo=java&logoColor=black">
-  <img src="https://img.shields.io/badge/Spring Boot-239120?&style=for-the-badge&logo=css&logoColor=white">
+  <img src="https://img.shields.io/badge/Spring Boot-239120?&style=for-the-badge&logo=Spring-Boot&logoColor=black">
+  <img src="https://img.shields.io/badge/api omdb-483D8B?style=for-the-badge&logo=apikey&logoColor=black">
+  <img src="https://img.shields.io/badge/Api chatGPT-708090?style=for-the-badge&logo=openai&logoColor=black">
   <img src="https://img.shields.io/badge/Github-F7DF1E?style=for-the-badge&logo=Git&logoColor=black">
+  <img src="https://img.shields.io/badge/Git-FF3300?style=for-the-badge&logo=Git&logoColor=black">
+
  
   
   ## Fases da Api
