@@ -22,6 +22,7 @@ public class Principal {
     private List<DadosSeries> dadosSeries = new ArrayList<>();
     private SerieRepository repositorio;
     private List<Serie> series = new ArrayList<>();
+    private Optional<Serie> serieBuscar;
 
     public Principal(SerieRepository repositorio) {
         this.repositorio = repositorio;
@@ -39,6 +40,10 @@ public class Principal {
                     6 - Buscar as Top 5 Séries !
                     7 - Buscar Séries por Categoria !
                     8 - Filtrar Séries !
+                    9 - Filtrar Episodios por Trecho !
+                    10 - Buscar as Top 5 Episodios !
+                    11 - Buscar episódios a partir de uma data
+                    ***********************************
                     0 - Sair da Busca !
                                         
                     """;
@@ -70,6 +75,14 @@ public class Principal {
                 case 8:
                     filtrarSeries();
                     break;
+                case 9:
+                    buscarEpisodioPorTrecho();
+                    break;
+                case 10: buscarTop5EpisodioPorSerie();
+                break;
+                case 11:
+                    buscarEpisodiosDepoisDeUmaData();
+                    break;
                 case 0:
                     System.out.println("Busca finalizada.");
                     break;
@@ -79,6 +92,8 @@ public class Principal {
         }
 
     }
+
+
 
 
     private void buscarSerieWeb() {
@@ -139,10 +154,10 @@ public class Principal {
     private void buscarSeriePorTitulo() {
         System.out.println("Escolha uma Série por um Titulo !");
         var nomeSerie = leituraDadosMenu.nextLine();
-        Optional<Serie> serieEncontrada = repositorio.findByTituloContainingIgnoreCase(nomeSerie);
+         serieBuscar = repositorio.findByTituloContainingIgnoreCase(nomeSerie);
 
-        if (serieEncontrada.isPresent()){
-            System.out.println(" Dados da Série Encontrada: " + serieEncontrada.get());
+        if (serieBuscar.isPresent()){
+            System.out.println(" Dados da Série Encontrada: " + serieBuscar.get());
         } else {
             System.out.println("Série não encontrada.");
         }
@@ -184,13 +199,39 @@ public class Principal {
         var avaliacao = leituraDadosMenu.nextDouble();
         leituraDadosMenu.nextLine();
 
-        List<Serie> filtroSeries = repositorio.findByTotalTemporadasLessThanEqualAndAvaliacaoGreaterThanEqual(totalTemporadas, avaliacao);
+        List<Serie> filtroSeries = repositorio.seriesPorTemporadaEAvaliacao(totalTemporadas, avaliacao);
         System.out.println("Séries filtradas ");
         filtroSeries.forEach( s -> System.out.println(s.getTitulo() + " - Avaliação : " + s.getAvaliacao()));
 
     }
+    private void buscarEpisodioPorTrecho() {
+        System.out.println("Digite um Trecho do Episodio que deseja Buscar ! ");
+                var trechoEpisodio= leituraDadosMenu.nextLine();
+        List<Episodios> episodiosEncontrados = repositorio.episodiosPorTrecho(trechoEpisodio);
+        episodiosEncontrados.forEach(System.out::println);
+    }
+    private void buscarTop5EpisodioPorSerie() {
+        buscarSeriePorTitulo();
+        if (serieBuscar.isPresent()) {
+            Serie serie = serieBuscar.get();
+          List<Episodios> episodioTop5 = repositorio.topEpisodioPorSerie(serie);
+            episodioTop5.forEach(System.out::println);
+        }
+    }
+    private void buscarEpisodiosDepoisDeUmaData() {
+        buscarSeriePorTitulo();
+        if (serieBuscar.isPresent()){
+            Serie serie = serieBuscar.get();
+            System.out.println("Digite o ano limite de lançamento desejado !");
+            var anoLancamento = leituraDadosMenu.nextInt();
+            leituraDadosMenu.nextLine();
 
+            List<Episodios> episodiosAnoLancamento = repositorio.episodioPorSerieEAno( serie, anoLancamento);
+            episodiosAnoLancamento.forEach(System.out::println);
+        }
+
+    }
 }
 
-
+//Diferenciando os tipos de consulta da JPA
 
