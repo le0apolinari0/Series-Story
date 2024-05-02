@@ -7,6 +7,7 @@
 ## Conhecimentos posto em pratica.
 
 - Utilizando o Spring Framework em um projeto com linha de comando
+  Evolundia a aplicação para web integrando o back-end com o front-end.
 - trabalhando colaborativamente com Git e GitHub
 - Realizando a desserialização de dados com a biblioteca Jackson
 - Aplicando boas práticas de desenvolvimento com funções lambdas
