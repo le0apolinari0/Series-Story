@@ -1,3 +1,4 @@
+<h1>Criando uma API REST utilizando o Spring Framework</h1>
 <h1>Consumindo uma API externa </h1>
 <h1>Desenvolvendo back-end | frot-end </h1>
 
@@ -9,14 +10,19 @@
 ## Conhecimentos posto em pratica.
 
 - Utilizando o Spring Framework em um projeto com linha de comando
-  Evolundia a aplicação para web integrando o back-end com o front-end.
+  evoluindo a aplicação para web integrando o back-end com o front-end.
 - trabalhando colaborativamente com Git e GitHub
 - Realizando a desserialização de dados com a biblioteca Jackson
 - Aplicando boas práticas de desenvolvimento com funções lambdas
 - Manipulando fluxo de dados com Streams
 - Implementando estatísticas personalizadas
-
-api omdb
+- Manipulando fluxo de dados com Streams
+- Implementando estatísticas personalizadas
+- Entendendo a estrutura MVC no desenvolvimento de aplicações Web
+- Utilizando anotações do Spring para mapear rotas
+- Aplicando boas práticas com o uso de DTO e outros conceitos
+- Conectando os dados do back-end a uma aplicação front-end
+- Trate erros de CORS na disponibilização de dados
 
 ##  Tecnologias Back-End
 <div>
@@ -58,5 +64,6 @@ api omdb
 </div>
 
 ## Autor de projeto
+Leobaldo Apolinario
 
 Leo Apolinario
