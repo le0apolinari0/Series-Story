@@ -1,7 +1,9 @@
 <h1>Consumindo uma API externa </h1>
+<h1>Desenvolvendo back-end | frot-end </h1>
+
 
 <h2> Sobre</h2>
- <p> - Desenvolvendo back-end para uma streaming de Séries</p>
+ <p> - Desenvolvendo back-end e frot-end para uma streaming de Séries</p>
  <p> - Trabalhando com lambdas | streams | Java e Spring Boot no curso Alura.</p>
 
 ## Conhecimentos posto em pratica.
