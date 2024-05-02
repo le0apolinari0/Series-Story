@@ -18,16 +18,26 @@
 
 api omdb
 
-##  Tecnologias
+##  Tecnologias Back-End
 <div>
+  <img src="https://img.shields.io/badge/intellij-4B0082?style=for-the-badge&logo=intellij-idea&logoColor=black">
   <img src="https://img.shields.io/badge/Java-D14836?style=for-the-badge&logo=java&logoColor=black">
   <img src="https://img.shields.io/badge/Spring Boot-239120?&style=for-the-badge&logo=Spring-Boot&logoColor=black">
   <img src="https://img.shields.io/badge/api omdb-483D8B?style=for-the-badge&logo=apikey&logoColor=black">
   <img src="https://img.shields.io/badge/Api chatGPT-708090?style=for-the-badge&logo=openai&logoColor=black">
   <img src="https://img.shields.io/badge/Github-F7DF1E?style=for-the-badge&logo=Git&logoColor=black">
+  <img src="https://img.shields.io/badge/Git-FF3300?style=for-the-badge&logo=Git&logoColor=black"> 
+  <img src="https://img.shields.io/badge/postgres-00BFFF?style=for-the-badge&logo=Postgres&logoColor=black">
+  <img src="https://img.shields.io/badge/insomnia-9900FF?style=for-the-badge&logo=insomnia&logoColor=black">
+  
+  ##  Tecnologias Front-End
+  
+  <img src="https://img.shields.io/badge/vscode-00BFFF?style=for-the-badge&logo=visualstudio&logoColor=black">
+  <img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white">
+  <img src="https://img.shields.io/badge/CSS-008B8B?&style=for-the-badge&logo=css3&logoColor=white">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+  <img src="https://img.shields.io/badge/Github-808080?style=for-the-badge&logo=Github&logoColor=black">
   <img src="https://img.shields.io/badge/Git-FF3300?style=for-the-badge&logo=Git&logoColor=black">
-
- 
   
   ## Fases da Api
 </div>
